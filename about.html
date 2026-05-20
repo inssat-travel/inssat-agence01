@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - Inssat Travel Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0b2240; /* الأزرق الداكن الملكي */
+            --gold: #c5a059; /* الذهبي الفخم */
+            --white: #ffffff;
+            --text-dark: #222222;
+            --text-muted: #666666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* شريط التنقل العلوي الاحترافي */
+        .navbar {
+            background-color: var(--white);
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* تنسيق الشعار في شريط التنقل */
+        .nav-logo-img {
+            max-height: 55px;
+            width: auto;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            align-items: center;
+        }
+
+        /* تنسيق الأزرار الاحترافي والتفاعلي الجديد */
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px; /* زوايا دائرية ناعمة */
+            transition: all 0.3s ease; /* حركة سلسة عند المرور بالفأرة */
+            border: 1px solid transparent;
+            display: inline-block;
+        }
+
+        /* التأثير الفاخر عند مرور الماوس فوق الأزرار العادية */
+        .nav-links a:hover {
+            color: var(--white) !important;
+            background-color: var(--primary); /* يمتلئ باللون الأزرق */
+            box-shadow: 0 4px 10px rgba(11, 34, 64, 0.2); /* ظل خفيف */
+        }
+
+        /* تمييز زر الصفحة الحالية (À propos) */
+        .nav-links li a.active-btn {
+            color: var(--gold) !important;
+            border: 1px solid var(--gold);
+            background-color: transparent;
+        }
+        
+        .nav-links li a.active-btn:hover {
+            color: var(--white) !important;
+            background-color: var(--gold); /* يتحول للذهبي الكامل عند ملامسته */
+            box-shadow: 0 4px 10px rgba(197, 160, 89, 0.3);
+        }
+
+        /* الجزء العلوي البصري المشوق (Hero Banner) */
+        /* الكود المطور ليتناسب مع أبعاد صورتك الوطنية الجديدة */
+        /* كود متناسق يعطي مساحة كافية لظهور الصورة الطولية */
+        /* كود متناسق ومخصص لصورة الحديقة والمقام الجديدة */
+        .about-hero {
+            background: linear-gradient(135deg, rgba(11, 34, 64, 0.75) 0%, rgba(21, 53, 94, 0.7) 100%), 
+                        url('maqam.webp') no-repeat center 25%;
+            background-size: cover;
+            color: var(--white);
+            /* مساحة مثالية لظهور أفق الصورة والبحيرة بشكل متناسق */
+            padding: 150px 20px 160px 20px; 
+            text-align: center;
+            position: relative;
+            border-bottom: 5px solid var(--gold);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        /* تنسيق الشعار الكبير في بانر الواجهة */
+        .hero-logo-img {
+            max-width: 200px;
+            margin-bottom: 25px;
+            filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
+        }
+
+        .about-hero h1 {
+            font-size: 32px;
+            font-weight: 100;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .about-hero p {
+            color: var(--gold);
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        /* الحاوية الرئيسية للمحتوى */
+        .main-container {
+            max-width: 1100px;
+            margin: -40px auto 60px auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* بطاقة التعريف الكبرى */
+        .intro-card {
+            background-color: var(--white);
+            padding: 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .agency-title {
+            font-size: 22px;
+            color: var(--primary);
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.9;
+            color: #444;
+            text-align: justify;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* لوحة الشعار الفاخرة */
+        .slogan-box {
+            background: linear-gradient(to right, #0b2240, #15355e);
+            color: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 35px 0;
+            border-right: 6px solid var(--gold);
+            box-shadow: 0 5px 15px rgba(11,34,64,0.2);
+        }
+
+        .slogan-box h3 {
+            font-size: 20px;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        /* شبكة مميزات الوكالة */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 5px;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 30px 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 3px solid transparent;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+            border-top-color: var(--gold);
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            color: var(--gold);
+            margin-bottom: 18px;
+        }
+
+        .feature-card h3 {
+            font-size: 18px;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* القسم الفرنسي الأنيق */
+        .french-section {
+            background-color: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            margin-top: 35px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+            direction: ltr;
+            text-align: left;
+            border-left: 5px solid var(--primary);
+        }
+
+        .french-section h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-bottom: 12px;
+        }
+
+        .french-section p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        /* الفوتر السفلي المتناسق */
+        .footer {
+            background-color: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 20px;
+            font-size: 13px;
+            margin-top: 60px;
+            border-top: 4px solid var(--gold);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="logo.png" alt="INSSAT Logo" class="nav-logo-img" onerror="this.src='logo.jpg'">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="#" class="active-btn">À propos</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+   <section class="about-hero">
+        <div class="hero-container">
+            <div class="hero-logo-box">
+                <img src="logo.png" alt="INSSAT TRAVEL SERVICE" class="hero-logo-img">
+            </div>
+            
+            <div class="hero-text-box">
+                <h1>مرحباً بكم في عالمنا</h1>
+                <p>اكتشف من نحن وكيف نجعل من سفرك تجربة فريدة</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-container">
+        
+        <div class="intro-card">
+            <h2 class="agency-title">وكالة INSSAT TRAVEL SERVICE لخدمات السياحة والأسفار</h2>
+            <p class="intro-text">
+                من قلب مدينة <strong>عين الدفلى</strong>، ننطلق معكم لنرسم معاً تفاصيل رحلاتكم المثالية. نحن لسنا مجرد وكالة أسفار عادية، بل نحن مستشاروكم الحريصون على تقديم خدمات متكاملة باحترافية وسرعة تامة. نسهر على تنظيم أدق تفاصيل رحلات العمرة والحج، ونوفر أفضل خيارات حجوزات الفنادق العالمية وتذاكر الطيران، بالإضافة إلى مرافقتكم خطوة بخطوة في معالجة وتجهيز ملفات التأشيرة لضمان أعلى نسب القبول.
+            </p>
+            
+            <div class="slogan-box">
+                <h3>شعارنا الدائم</h3>
+                <p style="font-size: 20px; font-weight: bold; letter-spacing: 1px;">سفركم... راحتكم... ثقتنا</p>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <h3>ثقة وأمان</h3>
+                <p>نضع مصداقيتنا في التعامل قبل كل شيء، لتسافر وأنت مرتاح البال ومطمئن في كل خطوة.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>خدمات احترافية</h3>
+                <p>فريقنا يتميز بالخبرة العالية والدقة في تجهيز ملفات الفيزا وحجوزات الطيران والفنادق عبر العالم.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>راحة الزبون</h3>
+                <p>راحتكم هي دافعنا الأساسي؛ نختار لكم دائماً أفضل الفنادق وأسهل مسارات الرحلات بأسعار تنافسية.</p>
+            </div>
+        </div>
+
+        <div class="french-section">
+            <h2>À Propos de Nous</h2>
+            <p>
+                Basée à <strong>Ain Defla</strong>, l'agence <strong>INSSAT TRAVEL SERVICE</strong> est votre partenaire de confiance pour explorer le monde. Nous sommes spécialisés dans l'organisation de séjours d'Omra et Hadj, la réservation de billets d'avion et d'hôtels à travers le monde, ainsi que l'assistance complète pour l'obtention de vos visas. Notre équipe dévouée met tout en œuvre pour vous garantir un voyage serein. Votre confort est notre priorité absolue.
+            </p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Inssat Travel Service - Ain Defla. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

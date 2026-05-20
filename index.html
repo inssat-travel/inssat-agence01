@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSSAT TRAVEL SERVICE - وكالة إنصات للسياحة والأسفار</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #0b2240;
+            --light-blue: #1a3a60;
+            --gold: #cfa134;
+            --text-dark: #333333;
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: var(--text-dark);
+        }
+
+        /* الشريط العلوي للمعلومات والشبكات */
+        .top-bar {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 10px 4%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            flex-wrap: wrap;
+        }
+
+        .top-info, .top-social {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .top-info a, .top-social a {
+            color: var(--white);
+            text-decoration: none;
+        }
+
+        /* شريط التنقل الرئيسي (المنيو) */
+        .navbar {
+          background-color: var(--white);
+    padding: 15px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    
+    /* الأسطر الجديدة لجعل الشريط ثابتاً عند النزول */
+    position: Skinner;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+        
+        .logo span {
+            color: var(--gold);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .lang-switch {
+            display: flex;
+            gap: 15px;
+        }
+
+        .lang-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* قسم الواجهة الرئيسية مع الخلفية المدمجة والسلوجن */
+        .hero {
+            position: relative;
+            height: 520px;
+            background: linear-gradient(rgba(11, 34, 64, 0.55), rgba(11, 34, 64, 0.45)), 
+                        url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+            color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        .hero h2 {
+            font-size: 32px;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .hero .slogan-ar {
+            font-size: 26px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .hero .slogan-fr {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+        }
+
+        .btn-blue {
+            background-color: var(--primary-blue);
+            color: var(--white);
+        }
+
+        .btn-gold {
+            background-color: var(--gold);
+            color: var(--white);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        /* قسم لوحة الخدمات الخمسة */
+        .services-section {
+            padding: 60px 4%;
+            background-color: var(--white);
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 26px;
+            color: var(--primary-blue);
+            margin-bottom: 45px;
+            position: relative;
+            display: inline-block;
+            padding: 0 20px;
+            font-weight: 700;
+        }
+
+        .section-title::before, .section-title::after {
+            content: "—♦—";
+            color: var(--gold);
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--white);
+            border: 1px solid #eef2f5;
+            border-radius: 6px;
+            padding: 30px 20px;
+            width: 215px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .icon-wrapper {
+            width: 70px;
+            height: 70px;
+            background-color: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px auto;
+            font-size: 26px;
+        }
+
+        /* التناوب التلقائي للألوان كما بالصورة */
+        .service-card:nth-child(even) .icon-wrapper {
+            background-color: var(--gold);
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+            color: var(--primary-blue);
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
+
+        .service-card h4 {
+            font-size: 14px;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .service-card p {
+            font-size: 13px;
+            color: #777;
+            line-height: 1.4;
+        }
+
+        /* الفوتر السفلي المتكامل للمعلومات والخرائط */
+        .footer {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 4% 20px 4%;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 35px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 30px;
+        }
+
+        .footer-col h3 {
+            color: var(--gold);
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .footer-col p {
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-map {
+            display: inline-block;
+            background-color: var(--gold);
+            color: white;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 5px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-map:hover {
+            opacity: 0.9;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .footer-socials a {
+            width: 36px;
+            height: 36px;
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .footer-socials a:hover {
+            background-color: var(--gold);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #aaa;
+        }
+
+        /* تعديلات التجاوب البرمجي السلس للهواتف الذكية */
+        @media (max-width: 768px) {
+            .top-bar { justify-content: center; gap: 10px; text-align: center; }
+            .navbar { flex-direction: column; gap: 15px; }
+            .nav-links { display: none; }
+            .hero h1 { font-size: 32px; }
+            .hero h2 { font-size: 22px; }
+            .hero .slogan-ar { font-size: 19px; }
+            .hero-buttons { flex-direction: column; width: 100%; max-width: 280px; }
+            .services-grid { gap: 15px; }
+            .service-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar" id="home">
+        <div class="top-info">
+            <span><i class="fa-solid fa-phone"></i> 0772930174 / 0550056941</span>
+            <span><i class="fa-solid fa-envelope"></i> inssattravelservice@gmail.com</span>
+        </div>
+        <div class="top-social">
+            <span>Suivez-nous :</span>
+            <a href="https://www.facebook.com/inssattravel" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/inssattravel/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@inssattravel" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo" style="display: flex; align-items: center;"><img src="logo.png" alt="INSSAT TRAVEL SERVICE" style="height: 50px !important; width: auto !important;"></div>
+        <ul class="nav-links">
+            <li><a href="#home" style="color: var(--gold);">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     <div class="lang-switch">
+        <div id="google_translate_element"></div>
+     </div>
+    </nav>
+
+    <header class="hero">
+        <h1>INSSAT TRAVEL SERVICE</h1>
+        <h2>وكالة إنصات للسياحة والأسفار</h2>
+        <p class="slogan-ar">سفركم ... راحتكم ... ثقتنا</p>
+        <p class="slogan-fr">Votre voyage... Notre priorité... Votre confiance</p>
+        
+        <div class="hero-buttons">
+            <a href="tel:0772930174" class="btn btn-blue">
+    <i class="fa-solid fa-phone"></i> اتصل بنا
+</a>
+            <a href="https://wa.me/213550056941" class="btn btn-gold" target="_blank"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+        </div>
+    </header>
+
+    <section class="services-section" id="services">
+        <h2 class="section-title">خدماتنا / NOS SERVICES</h2>
+        
+      <div class="services-grid">
+
+    <!-- الطيران -->
+    <div class="service-card" onclick="window.open('https://wa.me/213550056941','_blank')">
+        <div class="icon-wrapper"><i class="fa-solid fa-plane"></i></div>
+        <h3>حجز تذاكر الطيران</h3>
+        <h4>Billets d'avion</h4>
+        <p>Réservez vos billets d'avion aux meilleurs prix.</p>
+    </div>
+
+    <!-- الفنادق -->
+    <div class="service-card" onclick="window.open('https://wa.me/213550056941','_blank')">
+        <div class="icon-wrapper"><i class="fa-solid fa-hotel"></i></div>
+        <h3>حجز الفنادق</h3>
+        <h4>Hôtels</h4>
+        <p>Réservez vos hôtels partout dans le monde.</p>
+    </div>
+
+    <!-- العمرة -->
+    <div class="service-card" onclick="window.open('https://inssat-travel.github.io/inssat-agence/','_blank')">
+        <div class="icon-wrapper"><i class="fa-solid fa-kaaba"></i></div>
+        <h3>العمرة</h3>
+        <h4>Omra</h4>
+        <p>Programmes Omra sur mesure adaptés à vos besoins.</p>
+    </div>
+
+    <!-- الحج -->
+    <div class="service-card" onclick="window.open('https://inssat-travel.github.io/inssat-agence/','_blank')">
+        <div class="icon-wrapper"><i class="fa-solid fa-mosque"></i></div>
+        <h3>الحج</h3>
+        <h4>Hadj</h4>
+        <p>Accompagnement complet pour le Hadj.</p>
+    </div>
+
+    <!-- التأشيرات -->
+    <div class="service-card" onclick="window.open('https://wa.me/213550056941','_blank')">
+        <div class="icon-wrapper"><i class="fa-solid fa-passport"></i></div>
+        <h3>خدمات التأشيرات</h3>
+        <h4>Services de visa</h4>
+        <p>Traitement rapide et fiable de vos dossiers de visas.</p>
+    </div>
+
+</div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="footer-grid">
+            <div class="footer-col" style="direction: rtl;">
+                <h3>Téléphones / اتصل بنا</h3>
+                <p><i class="fa-solid fa-phone"></i> 07-72-93-01-74</p>
+                <p><i class="fa-solid fa-phone"></i> 05-50-05-69-41</p>
+                <p><i class="fa-solid fa-envelope"></i> inssattravelservice@gmail.com</p>
+            </div>
+            
+            <div class="footer-col" style="direction: rtl;">
+                <h3>Adresse / موقعنا</h3>
+                <p><i class="fa-solid fa-location-dot"></i> rue colonel bounama, Ain Defla, Algérie</p>
+                <a href="https://maps.app.goo.gl/PXHCvyZ9rA6VxeMHA" class="btn-map" target="_blank">Voir sur la carte / عرض الخريطة</a>
+            </div>
+
+            <div class="footer-col">
+                <h3>Suivez-nous / تابعونا</h3>
+                <div class="footer-socials">
+                    <a href="https://www.facebook.com/inssattravel" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/inssattravel/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@inssattravel" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Tous droits réservés © 2026 INSSAT TRAVEL SERVICE
+        </div>
+    </footer>
+
+    <a href="https://wa.me/213772930174" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'ar', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script>
+<script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // قراءة القسم المطلوب من الرابط سواء كان بـ # أو بـ ?
+        const hash = window.location.hash;
+        if (hash) {
+            setTimeout(() => {
+                const targetId = hash.replace('#', '');
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 300);
+        }
+    });
+    </script>
+<style>
+        /* تنسيق الأزرار الاحترافي الجديد للصفحة الرئيسية */
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #0b2240 !important; /* الأزرق الملكي للوكالة */
+            font-weight: 700;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px; /* زوايا دائرية ناعمة */
+            transition: all 0.3s ease; /* حركة سلسة عند المرور بالفأرة */
+            border: 1px solid transparent;
+            display: inline-block;
+        }
+
+        /* التأثير الفاخر عند مرور الماوس فوق أزرار الصفحة الرئيسية */
+        .nav-links a:hover {
+            color: #ffffff !important;
+            background-color: #0b2240 !important; /* يمتلئ باللون الأزرق */
+            box-shadow: 0 4px 10px rgba(11, 34, 64, 0.2); /* ظل خفيف */
+        }
+
+        /* تنسيق حجم الشعار في شريط التنقل */
+        /* ضبط حجم الشعار بدقة ومنعه من التضخم */
+        .nav-logo-img {
+            max-height: 50px !important; /* هذا السطر يجبر الصورة على ألا تتعدى هذا الارتفاع */
+            width: auto !important; /* الحفاظ على أبعاد الصورة دون تشويه */
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        /* ضبط الحاوية لضمان عدم خروج الشعار عن مساره */
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+  <nav class="navbar">
+        <div class="logo" style="display: flex; align-items: center;">
+            <img src="logo.png" alt="INSSAT TRAVEL SERVICE" style="height: 50px !important; width: auto !important;">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" style="color: var(--gold);">Accueil</a></li>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="lang-switch">
+            <div id="google_translate_element"></div>
+        </div>
+    </nav>
+</body>
+</html>
