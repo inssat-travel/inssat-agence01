@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071b35">
+<meta name="description" content="INSSAT TRAVEL SERVICE — Your Journey, Our Passion. عمرة، سياحة، فنادق وتذاكر طيران.">
+<title>INSSAT TRAVEL SERVICE | Your Journey, Our Passion</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071b35;--navy2:#0d2b50;--gold:#d8ad57;--gold2:#f0d18c;--ink:#15243a;--muted:#69778b;--paper:#f7f8fa;--white:#fff;--line:#e8ebf0;--shadow:0 18px 50px rgba(7,27,53,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Cairo","Manrope",sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.container{width:min(1180px,92%);margin:auto}
+.topline{background:#041326;color:#d9e1ed;font:12px "Manrope","Cairo",sans-serif;padding:9px 0}.topline .container{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.topline a{margin-inline-start:18px}.gold{color:var(--gold2)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);box-shadow:0 5px 24px rgba(7,27,53,.07)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand img{width:150px;height:70px;object-fit:contain;display:block}.navlinks{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:700;color:#20344f}.navlinks a:hover{color:#b48737}.nav-actions{display:flex;align-items:center;gap:10px}.lang{border:1px solid var(--line);background:white;border-radius:30px;padding:8px 13px;font-weight:800;color:var(--navy);cursor:pointer}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;border-radius:8px;padding:13px 22px;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#17243a;box-shadow:0 8px 22px #d8ad573d}.btn-outline{border:1px solid #ffffff80;color:white;background:#ffffff12}.btn-navy{background:var(--navy);color:white}.menu-btn{display:none;background:none;border:0;font-size:25px;color:var(--navy)}
+.hero{min-height:610px;display:flex;align-items:center;position:relative;overflow:hidden;color:white;background:linear-gradient(90deg,rgba(3,17,34,.86),rgba(3,17,34,.35)),url("https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=2200&q=85") center/cover}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:100px;background:linear-gradient(transparent,var(--paper));pointer-events:none}.hero-content{position:relative;z-index:1;max-width:690px;padding:88px 0 115px}.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--gold2);font:700 12px "Manrope";letter-spacing:2px;text-transform:uppercase}.eyebrow:before{content:"";width:35px;height:1px;background:var(--gold)}h1{font-size:clamp(38px,5.2vw,66px);line-height:1.2;margin:20px 0 15px;font-weight:800}.hero p{font-size:18px;line-height:1.9;color:#e5ebf2;max-width:580px;margin:0 0 28px}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.hero-note{margin-top:34px;display:flex;gap:24px;flex-wrap:wrap;color:#e5ebf2;font-size:13px}.hero-note span{display:flex;align-items:center;gap:8px}.hero-note b{color:var(--gold2);font:800 20px "Manrope"}
+.quickbar{position:relative;z-index:3;margin-top:-46px}.quick-inner{background:white;border-radius:14px;box-shadow:var(--shadow);padding:22px 26px;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.quick-item{display:flex;align-items:center;gap:13px;padding:6px 12px;border-inline-end:1px solid var(--line)}.quick-item:last-child{border:0}.quick-icon{width:45px;height:45px;border-radius:12px;background:#f8f1e3;color:#a77b2c;display:grid;place-items:center;font-size:20px}.quick-item strong{display:block;font-size:14px}.quick-item small{color:var(--muted);font-size:12px}
+section{padding:86px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.section-head .eyebrow{color:#a77b2c}.section-head h2{font-size:clamp(28px,3vw,40px);color:var(--navy);margin:12px 0}.section-head p{color:var(--muted);line-height:1.9;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.service{background:white;border:1px solid var(--line);border-radius:14px;padding:26px;transition:.25s;min-height:195px;position:relative;overflow:hidden}.service:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#e4c98f}.service-icon{width:52px;height:52px;border-radius:14px;background:var(--navy);color:var(--gold2);display:grid;place-items:center;font-size:22px;margin-bottom:18px}.service h3{margin:0 0 8px;color:var(--navy);font-size:19px}.service p{margin:0;color:var(--muted);font-size:14px;line-height:1.8}.service .arrow{position:absolute;bottom:24px;inset-inline-end:25px;color:#b68a3d;font-size:20px}
+.feature{background:var(--navy);color:white;position:relative;overflow:hidden}.feature:before{content:"";position:absolute;width:480px;height:480px;border:1px solid #d8ad5730;border-radius:50%;inset:-250px -100px auto auto}.feature-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;position:relative}.feature-photo{height:430px;border-radius:16px;overflow:hidden;position:relative}.feature-photo img{width:100%;height:100%;object-fit:cover}.feature-photo:after{content:"";position:absolute;inset:0;border:1px solid #ffffff40;border-radius:16px}.feature-copy .eyebrow{color:var(--gold2)}.feature-copy h2{font-size:clamp(30px,3.5vw,44px);line-height:1.3;margin:17px 0}.feature-copy p{color:#c5d0df;line-height:2}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.feature-list span{font-size:14px;color:#f0f3f7}.feature-list span:before{content:"✓";color:var(--gold2);font-weight:900;margin-inline-end:9px}
+.destinations{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:18px}.destination{height:300px;border-radius:14px;overflow:hidden;position:relative;color:white;background:#24364b}.destination img{width:100%;height:100%;object-fit:cover;transition:.5s}.destination:hover img{transform:scale(1.06)}.destination:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(2,15,30,.8))}.destination div{position:absolute;z-index:1;bottom:22px;inset-inline-start:22px}.destination small{color:var(--gold2)}.destination h3{margin:5px 0;font-size:22px}
+.b2b{padding:0 0 85px}.b2b-panel{background:linear-gradient(120deg,#102e52,#071b35);border-radius:16px;padding:34px 42px;color:white;display:flex;align-items:center;justify-content:space-between;gap:24px}.b2b-panel h3{font-size:24px;margin:0 0 7px}.b2b-panel p{margin:0;color:#c7d2e0}
+.contact{background:#f0f3f7}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-info{background:var(--navy);color:white;border-radius:16px;padding:34px}.contact-info h3{font-size:25px;margin-top:0}.contact-info p{color:#cbd5e1;line-height:1.8}.contact-line{display:flex;gap:13px;margin:22px 0;align-items:flex-start}.contact-line i{color:var(--gold2);font-style:normal;font-size:19px}.contact-line small{display:block;color:#bdc9d8;margin-top:3px}.contact-form{background:white;border-radius:16px;padding:32px;box-shadow:0 10px 35px #071b350b}.contact-form h3{margin:0 0 22px;color:var(--navy);font-size:23px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:700;color:#45546a}.field input,.field select,.field textarea{border:1px solid #dfe4eb;border-radius:8px;padding:12px 13px;background:#fbfcfd;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}.field textarea{min-height:100px;resize:vertical}
+footer{background:#041326;color:#d4dce7;padding:42px 0 22px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:35px}.footer-brand img{width:145px;height:80px;object-fit:contain;background:#fff;border-radius:8px;padding:4px}.footer-grid h4{color:white;margin:0 0 15px}.footer-grid p,.footer-grid a{color:#b8c4d3;font-size:13px;line-height:2}.copyright{border-top:1px solid #ffffff18;margin-top:30px;padding-top:18px;text-align:center;color:#8796aa;font:12px "Manrope"}
+.whatsapp{position:fixed;bottom:22px;inset-inline-end:22px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#20c66b;color:white;font-size:27px;z-index:60;box-shadow:0 8px 24px #0003}
+.offers-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.offers-empty{grid-column:1/-1;text-align:center;background:#fff;border:1px dashed #d8ad57;border-radius:14px;padding:28px;color:#69778b}.offer-card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:0 10px 30px #071b350d}.offer-card img{width:100%;height:210px;object-fit:cover;display:block}.offer-card-body{padding:20px}.offer-card h3{margin:0 0 8px;color:var(--navy)}.offer-card p{color:var(--muted);line-height:1.8;margin:8px 0}.offer-price{color:#9a7024;font-size:22px;font-weight:900}.offer-meta{font-size:13px;color:#69778b}.admin-modal{display:none;position:fixed;inset:0;background:#041326bb;z-index:120;overflow:auto;padding:24px}.admin-panel{max-width:720px;margin:4vh auto;background:white;border-radius:16px;padding:26px;box-shadow:0 25px 80px #0005}.admin-panel h3{margin:0 0 18px;color:var(--navy)}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.admin-grid .field.full{grid-column:1/-1}.admin-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.admin-login{max-width:420px}.admin-top{display:flex;justify-content:space-between;align-items:center;gap:12px}.admin-top button{border:0;background:#f1f3f6;border-radius:8px;padding:8px 12px;cursor:pointer}.offer-manage{display:flex;gap:8px;margin-top:12px}.offer-manage button{border:0;border-radius:7px;padding:8px 12px;cursor:pointer}.admin-edit{background:#edf2f8;color:#102e52}.admin-delete{background:#fff0f0;color:#a22}@media(max-width:680px){.offers-grid{grid-template-columns:1fr}.admin-grid{grid-template-columns:1fr}.admin-grid .field.full{grid-column:auto}.admin-panel{padding:18px;margin:2vh auto}}
+.toast{position:fixed;bottom:95px;inset-inline:20px;margin:auto;max-width:440px;background:#102e52;color:white;padding:14px 18px;border-radius:10px;box-shadow:var(--shadow);display:none;z-index:80;text-align:center}
+[dir=ltr] .hero-content{margin-right:auto}[dir=rtl] .hero-content{margin-left:auto}
+
+/* Public offers display */
+@media(max-width:900px){.offers-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.offers-grid{grid-template-columns:1fr}}
+
+@media(max-width:900px){.navlinks{gap:12px;font-size:12px}.quick-inner{grid-template-columns:1fr 1fr}.quick-item:nth-child(2){border:0}.feature-grid{gap:30px}.destinations{grid-template-columns:1fr 1fr}.destination:first-child{grid-column:1/-1}.services{grid-template-columns:1fr 1fr}}
+@media(max-width:680px){.topline .container{justify-content:center}.topline .social-top{display:none}.nav{height:72px}.brand img{width:120px;height:62px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:18px 5%;box-shadow:0 15px 25px #071b3518;flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{display:block;padding:8px}.nav-actions .btn{display:none}.hero{min-height:590px;background-position:58% center}.hero-content{padding:70px 0 100px}h1{font-size:39px}.hero p{font-size:16px}.quick-inner{padding:17px;gap:8px}.quick-item{padding:5px;border:0}.quick-item strong{font-size:12px}.quick-item small{font-size:10px}.quick-icon{width:38px;height:38px;font-size:17px}section{padding:65px 0}.services{grid-template-columns:1fr}.feature-grid,.contact-grid{grid-template-columns:1fr}.feature-photo{height:280px;order:2}.destinations{grid-template-columns:1fr}.destination:first-child{grid-column:auto}.destination{height:250px}.b2b-panel{padding:28px;align-items:flex-start;flex-direction:column}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-grid{grid-template-columns:1fr}.hero-note{gap:12px}.hero-note b{font-size:17px}}
+</style>
+</head>
+<body>
+<div class="topline"><div class="container"><div><a href="tel:+213550056941">☎ +213 550 056 941</a><a href="mailto:inssattravelservice@gmail.com">✉ inssattravelservice@gmail.com</a></div><div class="social-top"><span class="gold">AIN DEFLA · ALGÉRIE</span></div></div></div>
+<header><div class="container nav">
+<a class="brand" href="#home" aria-label="INSSAT"><img src="assets/logo-original.png" alt="INSSAT TRAVEL SERVICE"></a>
+<button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+<nav class="navlinks" id="navLinks">
+<a href="#home" data-ar="الرئيسية" data-fr="Accueil">الرئيسية</a><a href="#services" data-ar="خدماتنا" data-fr="Nos services">خدماتنا</a><a href="#offers" data-ar="العروض المتوفرة" data-fr="Offres disponibles">العروض المتوفرة</a><a href="https://inssat-travel.github.io/inssat-agence/" data-ar="العمرة" data-fr="Omra">العمرة</a><a href="#destinations" data-ar="الوجهات" data-fr="Destinations">الوجهات</a><a href="#partners" data-ar="الشركاء B2B" data-fr="Partenaires B2B">الشركاء B2B</a><a href="#contact" data-ar="اتصل بنا" data-fr="Contact">اتصل بنا</a>
+</nav>
+<div class="nav-actions"><button class="btn btn-navy" id="adminOpen" type="button">إضافة عرض</button><button class="lang" id="langBtn">FR</button><a class="btn btn-gold" href="#contact" data-ar="اطلب عرضاً" data-fr="Demander un devis">اطلب عرضاً</a></div>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="container"><div class="hero-content">
+<div class="eyebrow" data-ar="رحلتك تبدأ من هنا" data-fr="VOTRE VOYAGE COMMENCE ICI">رحلتك تبدأ من هنا</div>
+<h1 data-ar="اكتشف العالم<br>مع INSSAT" data-fr="Explorez le monde<br>avec INSSAT">اكتشف العالم<br>مع INSSAT</h1>
+<p data-ar="نرافقك في كل خطوة، من التخطيط إلى العودة، بخدمات سفر وسياحة تجمع بين الراحة والثقة والاهتمام بالتفاصيل." data-fr="Nous vous accompagnons à chaque étape, de la préparation au retour, avec des services de voyage fiables et attentionnés.">نرافقك في كل خطوة، من التخطيط إلى العودة، بخدمات سفر وسياحة تجمع بين الراحة والثقة والاهتمام بالتفاصيل.</p>
+<div class="hero-buttons"><a class="btn btn-gold" href="#services" data-ar="اكتشف خدماتنا ↙" data-fr="Découvrir nos services ↙">اكتشف خدماتنا ↙</a><a class="btn btn-outline" href="https://wa.me/213550056941" target="_blank" rel="noopener">◉ WhatsApp</a></div>
+<div class="hero-note"><span><b>01</b> <span data-ar="خدمة موثوقة" data-fr="Service fiable">خدمة موثوقة</span></span><span><b>02</b> <span data-ar="متابعة شخصية" data-fr="Suivi personnalisé">متابعة شخصية</span></span><span><b>03</b> <span data-ar="وجهات متنوعة" data-fr="Destinations variées">وجهات متنوعة</span></span></div>
+</div></div></section>
+<div class="container quickbar"><div class="quick-inner">
+<div class="quick-item"><div class="quick-icon">✈</div><div><strong data-ar="تذاكر الطيران" data-fr="Billets d’avion">تذاكر الطيران</strong><small data-ar="رحلات ووجهات متعددة" data-fr="Vols et destinations">رحلات ووجهات متعددة</small></div></div>
+<div class="quick-item"><div class="quick-icon">☾</div><div><strong data-ar="برامج العمرة" data-fr="Séjours Omra">برامج العمرة</strong><small data-ar="رحلة إيمانية مريحة" data-fr="Un voyage spirituel serein">رحلة إيمانية مريحة</small></div></div>
+<div class="quick-item"><div class="quick-icon">⌂</div><div><strong data-ar="حجز الفنادق" data-fr="Réservation hôtels">حجز الفنادق</strong><small data-ar="خيارات تناسب احتياجاتك" data-fr="Des choix adaptés">خيارات تناسب احتياجاتك</small></div></div>
+<div class="quick-item"><div class="quick-icon">◎</div><div><strong data-ar="تأشيرات السفر" data-fr="Services de visa">تأشيرات السفر</strong><small data-ar="مرافقة في ملف التأشيرة" data-fr="Accompagnement visa">مرافقة في ملف التأشيرة</small></div></div>
+</div></div>
+<section id="services"><div class="container"><div class="section-head"><div class="eyebrow" data-ar="خدماتنا" data-fr="NOS SERVICES">خدماتنا</div><h2 data-ar="كل ما تحتاجه لرحلة متكاملة" data-fr="Tout pour un voyage réussi">كل ما تحتاجه لرحلة متكاملة</h2><p data-ar="خدمات سفر متنوعة، مع متابعة قريبة واهتمام بالتفاصيل التي تصنع الفرق." data-fr="Une gamme complète de services, avec un accompagnement attentif à chaque détail.">خدمات سفر متنوعة، مع متابعة قريبة واهتمام بالتفاصيل التي تصنع الفرق.</p></div>
+<div class="services">
+<a class="service" href="https://inssat-travel.github.io/inssat-agence/"><div class="service-icon">☾</div><h3 data-ar="رحلات العمرة" data-fr="Voyages Omra">رحلات العمرة</h3><p data-ar="برامج عمرة، خيارات فنادق وغرف، ومعلومات واضحة حول الرحلة والخدمات." data-fr="Programmes Omra, hôtels, chambres et informations détaillées sur votre séjour.">برامج عمرة، خيارات فنادق وغرف، ومعلومات واضحة حول الرحلة والخدمات.</p><span class="arrow">↗</span></a>
+<a class="service" href="#contact"><div class="service-icon">✈</div><h3 data-ar="تذاكر الطيران" data-fr="Billetterie aérienne">تذاكر الطيران</h3><p data-ar="اطلب المساعدة في البحث عن رحلتك وتفاصيل الحجز." data-fr="Demandez de l’aide pour trouver votre vol et organiser votre réservation.">اطلب المساعدة في البحث عن رحلتك وتفاصيل الحجز.</p><span class="arrow">↗</span></a>
+<a class="service" href="#contact"><div class="service-icon">⌂</div><h3 data-ar="الفنادق والإقامة" data-fr="Hôtels & hébergement">الفنادق والإقامة</h3><p data-ar="خيارات إقامة تناسب وجهتك وميزانيتك." data-fr="Des hébergements adaptés à votre destination et votre budget.">خيارات إقامة تناسب وجهتك وميزانيتك.</p><span class="arrow">↗</span></a>
+<a class="service" href="#destinations"><div class="service-icon">⌖</div><h3 data-ar="السياحة الداخلية" data-fr="Tourisme national">السياحة الداخلية</h3><p data-ar="اكتشف جمال الجزائر من خلال رحلات وبرامج سياحية." data-fr="Découvrez la beauté de l’Algérie à travers nos circuits.">اكتشف جمال الجزائر من خلال رحلات وبرامج سياحية.</p><span class="arrow">↗</span></a>
+<a class="service" href="#destinations"><div class="service-icon">🌍</div><h3 data-ar="السياحة الدولية" data-fr="Voyages internationaux">السياحة الدولية</h3><p data-ar="وجهات وبرامج سياحية خارج الجزائر حسب رغبتك." data-fr="Des séjours à l’étranger selon vos envies.">وجهات وبرامج سياحية خارج الجزائر حسب رغبتك.</p><span class="arrow">↗</span></a>
+<a class="service" href="#visa"><div class="service-icon">▣</div><h3 data-ar="خدمات التأشيرات Visa" data-fr="Services de visa">خدمات التأشيرات Visa</h3><p data-ar="استفسر عن متطلبات التأشيرة ومرافقة ملف السفر عبر الوكالة." data-fr="Renseignez-vous sur les visas et l’accompagnement de votre dossier.">استفسر عن متطلبات التأشيرة ومرافقة ملف السفر عبر الوكالة.</p><span class="arrow">↗</span></a>
+</div></div></section>
+<section class="offers-section" id="offers"><div class="container"><div class="section-head"><div class="eyebrow" data-ar="عروضنا الحالية" data-fr="NOS OFFRES ACTUELLES">عروضنا الحالية</div><h2 data-ar="العروض والرحلات المتوفرة" data-fr="Offres et voyages disponibles">العروض والرحلات المتوفرة</h2><p data-ar="اكتشف أحدث عروض العمرة والرحلات الداخلية والدولية والفنادق. الأسعار والتواريخ موضحة في كل عرض." data-fr="Découvrez nos offres Omra, circuits nationaux et internationaux et hôtels. Prix et dates sont affichés sur chaque offre.">اكتشف أحدث عروض العمرة والرحلات الداخلية والدولية والفنادق. الأسعار والتواريخ موضحة في كل عرض.</p></div><div class="offers-grid" id="offersGrid"><div class="offers-empty" data-ar="لا توجد عروض منشورة حالياً. ترقبوا عروضنا القادمة." data-fr="Aucune offre publiée pour le moment. Nos prochaines offres arrivent bientôt.">لا توجد عروض منشورة حالياً. ترقبوا عروضنا القادمة.</div></div></div></section>
+<section class="feature" id="umrah"><div class="container feature-grid"><div class="feature-photo"><img src="https://images.unsplash.com/photo-1564769625905-50e93615e769?auto=format&fit=crop&w=1100&q=85" alt="المسجد الحرام"></div><div class="feature-copy"><div class="eyebrow" data-ar="رحلات العمرة" data-fr="VOYAGES OMRA">رحلات العمرة</div><h2 data-ar="رحلة إيمانية، نعتني بتفاصيلها" data-fr="Un voyage spirituel, chaque détail compte">رحلة إيمانية، نعتني بتفاصيلها</h2><p data-ar="اكتشف برامج العمرة القادمة، وتعرّف على تواريخ السفر والفنادق وأنواع الغرف والخدمات المشمولة. فريقنا جاهز للإجابة عن استفساراتك." data-fr="Découvrez nos prochains programmes Omra : dates, hôtels, types de chambres et prestations incluses. Notre équipe est à votre écoute.">اكتشف برامج العمرة القادمة، وتعرّف على تواريخ السفر والفنادق وأنواع الغرف والخدمات المشمولة. فريقنا جاهز للإجابة عن استفساراتك.</p><div class="feature-list"><span data-ar="تفاصيل واضحة للبرنامج" data-fr="Programme détaillé">تفاصيل واضحة للبرنامج</span><span data-ar="خيارات غرف متعددة" data-fr="Plusieurs types de chambres">خيارات غرف متعددة</span><span data-ar="معلومات الفنادق والمسافة" data-fr="Hôtels et distances">معلومات الفنادق والمسافة</span><span data-ar="استفسار مباشر عبر واتساب" data-fr="Contact direct WhatsApp">استفسار مباشر عبر واتساب</span></div><a class="btn btn-gold" href="#contact" data-ar="استفسر عن برامج العمرة" data-fr="Demander les programmes Omra">استفسر عن برامج العمرة</a></div></div></section>
+<section id="visa"><div class="container"><div class="section-head"><div class="eyebrow" data-ar="خدمات التأشيرات" data-fr="SERVICES DE VISA">خدمات التأشيرات</div><h2 data-ar="نرافقك في إجراءات التأشيرة" data-fr="Nous vous accompagnons dans vos démarches de visa">نرافقك في إجراءات التأشيرة</h2><p data-ar="للاستفسار حول الوجهة والوثائق المطلوبة ومرافقة ملفك، تواصل مع فريق INSSAT مباشرة." data-fr="Pour connaître les conditions selon votre destination et obtenir un accompagnement, contactez directement l’équipe INSSAT.">للاستفسار حول الوجهة والوثائق المطلوبة ومرافقة ملفك، تواصل مع فريق INSSAT مباشرة.</p><a class="btn btn-gold" href="https://wa.me/213550056941?text=Visa%20-%20INSSAT%20TRAVEL%20SERVICE" target="_blank" rel="noopener" data-ar="استفسر عن التأشيرة عبر واتساب" data-fr="Demander des informations visa sur WhatsApp">استفسر عن التأشيرة عبر واتساب</a></div></div></section>
+<section id="destinations"><div class="container"><div class="section-head"><div class="eyebrow" data-ar="وجهات ملهمة" data-fr="DESTINATIONS INSPIRANTES">وجهات ملهمة</div><h2 data-ar="من الجزائر إلى العالم" data-fr="De l’Algérie au monde">من الجزائر إلى العالم</h2><p data-ar="بعض الوجهات التي يمكن أن تكون بداية مغامرتك القادمة." data-fr="Quelques destinations pour imaginer votre prochain départ.">بعض الوجهات التي يمكن أن تكون بداية مغامرتك القادمة.</p></div>
+<div class="destinations">
+<a class="destination" href="#contact"><img src="https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1000&q=80" alt="الصحراء الجزائرية"><div><small data-ar="الجزائر" data-fr="ALGÉRIE">الجزائر</small><h3 data-ar="سحر الصحراء" data-fr="Magie du désert">سحر الصحراء</h3></div></a>
+<a class="destination" href="#contact"><img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=850&q=80" alt="باريس"><div><small data-ar="فرنسا" data-fr="FRANCE">فرنسا</small><h3>Paris</h3></div></a>
+<a class="destination" href="#contact"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=850&q=80" alt="دبي"><div><small data-ar="الإمارات" data-fr="ÉMIRATS">الإمارات</small><h3>Dubai</h3></div></a>
+</div></div></section>
+<div class="container b2b" id="partners"><div class="b2b-panel"><div><div class="eyebrow" data-ar="للشركاء والمهنيين" data-fr="ESPACE PROFESSIONNELS">للشركاء والمهنيين</div><h3 data-ar="بوابة الشركاء B2B" data-fr="Portail partenaires B2B">بوابة الشركاء B2B</h3><p data-ar="وصول مخصص لشركائنا. نحتفظ ببوابة الشركاء الحالية دون تغيير وظائفها." data-fr="Un accès dédié à nos partenaires. Le portail actuel est conservé sans modification de ses fonctions.">وصول مخصص لشركائنا. نحتفظ ببوابة الشركاء الحالية دون تغيير وظائفها.</p></div><a class="btn btn-gold" href="http://inssat-travel.github.io/inssat-agence02/" target="_blank" rel="noopener" data-ar="الدخول إلى B2B ↗" data-fr="Accéder au B2B ↗">الدخول إلى B2B ↗</a></div></div>
+<section class="contact" id="contact"><div class="container"><div class="section-head"><div class="eyebrow" data-ar="نحن هنا لمساعدتك" data-fr="À VOTRE ÉCOUTE">نحن هنا لمساعدتك</div><h2 data-ar="ابدأ التخطيط لرحلتك" data-fr="Préparons votre prochain voyage">ابدأ التخطيط لرحلتك</h2><p data-ar="أرسل طلبك وسنتواصل معك لمساعدتك في اختيار الخدمة المناسبة." data-fr="Envoyez votre demande et notre équipe vous aidera à choisir le service adapté.">أرسل طلبك وسنتواصل معك لمساعدتك في اختيار الخدمة المناسبة.</p></div>
+<div class="contact-grid"><div class="contact-info"><h3 data-ar="تواصل مع INSSAT" data-fr="Contacter INSSAT">تواصل مع INSSAT</h3><p data-ar="يسعدنا استقبال استفساراتكم وطلباتكم." data-fr="Nous sommes à votre disposition pour toute demande d’information ou réservation.">يسعدنا استقبال استفساراتكم وطلباتكم.</p>
+<div class="contact-line"><i>☎</i><div><strong>0550 056 941</strong><small>0772 930 174 · 027 501 694</small></div></div>
+<div class="contact-line"><i>✉</i><div><strong>inssattravelservice@gmail.com</strong><small>Email</small></div></div>
+<div class="contact-line"><i>⌖</i><div><strong data-ar="شارع العقيد بونعامة، عين الدفلى" data-fr="Rue Colonel Bounaâma, Aïn Defla">شارع العقيد بونعامة، عين الدفلى</strong><small data-ar="مقابل البنك المركزي" data-fr="En face de la Banque centrale">مقابل البنك المركزي</small></div></div>
+<a class="btn btn-outline" href="https://maps.app.goo.gl/PXHCvyZ9rA6VxeMHA" target="_blank" rel="noopener" data-ar="عرض الموقع على الخريطة" data-fr="Voir sur la carte">عرض الموقع على الخريطة</a>
+</div>
+<form class="contact-form" id="bookingForm"><h3 data-ar="طلب حجز / استفسار" data-fr="Demande de réservation / information">طلب حجز / استفسار</h3><div class="fields">
+<div class="field"><label data-ar="الاسم واللقب" data-fr="Nom et prénom">الاسم واللقب</label><input name="name" required placeholder=" "></div>
+<div class="field"><label data-ar="رقم الهاتف" data-fr="Téléphone">رقم الهاتف</label><input name="phone" required type="tel"></div>
+<div class="field"><label data-ar="البريد الإلكتروني (اختياري)" data-fr="E-mail (facultatif)">البريد الإلكتروني (اختياري)</label><input name="email" type="email"></div>
+<div class="field"><label data-ar="نوع الخدمة" data-fr="Type de service">نوع الخدمة</label><select name="service"><option value="عمرة / Omra">عمرة / Omra</option><option value="تذكرة طيران / Billet d’avion">تذكرة طيران / Billet d’avion</option><option value="فندق / Hôtel">فندق / Hôtel</option><option value="سياحة داخلية / Tourisme national">سياحة داخلية / Tourisme national</option><option value="سياحة دولية / Voyage international">سياحة دولية / Voyage international</option><option value="تأشيرة / Visa">تأشيرة / Visa</option></select></div>
+<div class="field"><label data-ar="الوجهة" data-fr="Destination">الوجهة</label><input name="destination"></div>
+<div class="field"><label data-ar="عدد الأشخاص" data-fr="Nombre de personnes">عدد الأشخاص</label><input name="people" type="number" min="1" value="1"></div>
+<div class="field"><label data-ar="تاريخ السفر" data-fr="Date de voyage">تاريخ السفر</label><input name="date" type="date"></div>
+<div class="field full"><label data-ar="رسالة إضافية" data-fr="Message complémentaire">رسالة إضافية</label><textarea name="message"></textarea></div>
+<div class="field full"><button class="btn btn-gold" type="submit" data-ar="إرسال الطلب عبر واتساب" data-fr="Envoyer la demande via WhatsApp">إرسال الطلب عبر واتساب</button></div>
+</div></form></div></div></section>
+</main>
+<div class="admin-modal" id="adminLoginModal" aria-modal="true" role="dialog"><div class="admin-panel admin-login"><div class="admin-top"><h3>دخول إدارة العروض</h3><button type="button" data-close="adminLoginModal">✕</button></div><form id="adminLoginForm"><div class="field"><label for="adminPassword">كلمة المرور</label><input id="adminPassword" type="password" autocomplete="current-password" required></div><div class="admin-actions"><button class="btn btn-gold" type="submit">دخول</button><button class="btn btn-navy" type="button" data-close="adminLoginModal">إلغاء</button></div><p id="adminLoginError" style="color:#b42318;font-size:13px"></p></form></div></div>
+<div class="admin-modal" id="adminEditorModal" aria-modal="true" role="dialog"><div class="admin-panel"><div class="admin-top"><h3 id="adminEditorTitle">إضافة عرض جديد</h3><button type="button" data-close="adminEditorModal">✕</button></div><form id="offerForm"><input type="hidden" id="offerId"><div class="admin-grid"><div class="field"><label for="offerTitle">عنوان العرض</label><input id="offerTitle" required></div><div class="field"><label for="offerPrice">السعر</label><input id="offerPrice" placeholder="159000 دج"></div><div class="field"><label for="offerDate">التاريخ / الفترة</label><input id="offerDate" placeholder="15 و22 نوفمبر"></div><div class="field"><label for="offerCategory">نوع العرض</label><select id="offerCategory"><option>عمرة</option><option>رحلة داخلية</option><option>رحلة دولية</option><option>فندق</option></select></div><div class="field full"><label for="offerDetails">تفاصيل العرض</label><textarea id="offerDetails"></textarea></div><div class="field full"><label for="offerImageFile">صورة العرض من جهازك</label><input id="offerImageFile" type="file" accept="image/*"><small style="color:#69778b">اختر صورة من الهاتف أو الكمبيوتر. ستُرفع إلى Google Drive وتظهر لجميع زوار الموقع. الحد الأقصى 8 ميغابايت.</small><div id="offerImageStatus" style="font-size:12px;color:#69778b;margin-top:6px"></div><div id="offerImageCurrent" style="font-size:12px;color:#16803c;margin-top:4px"></div></div><div class="field full"><label for="offerImage">أو رابط صورة مباشر (اختياري)</label><input id="offerImage" type="url" placeholder="https://example.com/image.jpg"><small style="color:#69778b">يمكنك تركه فارغاً عند اختيار صورة من جهازك.</small></div></div><div class="admin-actions"><button class="btn btn-gold" type="submit">حفظ ونشر العرض</button><button class="btn btn-navy" type="button" id="adminLogout">تسجيل الخروج</button><button class="btn" style="background:#eef1f5" type="button" data-close="adminEditorModal">إغلاق</button></div><p id="adminStorageNote" style="font-size:12px;color:#69778b">تُحفظ العروض في جدول Google Sheets وتظهر لجميع الزوار.</p></form></div></div>
+<footer><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="assets/logo-original.png" alt="INSSAT"><p data-ar="Your Journey, Our Passion.<br>رفيقكم في عالم السياحة والأسفار." data-fr="Your Journey, Our Passion.<br>Votre partenaire de voyage.">Your Journey, Our Passion.<br>رفيقكم في عالم السياحة والأسفار.</p></div><div><h4 data-ar="روابط سريعة" data-fr="Liens rapides">روابط سريعة</h4><p><a href="#services" data-ar="خدماتنا" data-fr="Nos services">خدماتنا</a><br><a href="https://inssat-travel.github.io/inssat-agence/" data-ar="العمرة" data-fr="Omra">العمرة</a><br><a href="#partners">B2B</a></p></div><div><h4 data-ar="تابعنا وتواصل معنا" data-fr="Suivez-nous">تابعنا وتواصل معنا</h4><p><a href="https://www.facebook.com/inssattravel" target="_blank">Facebook</a><br><a href="https://www.instagram.com/inssattravel/" target="_blank">Instagram</a><br><a href="https://www.tiktok.com/@inssattravel" target="_blank">TikTok</a></p></div></div><div class="copyright">© 2026 INSSAT TRAVEL SERVICE · Your Journey, Our Passion</div></div></footer>
+<a class="whatsapp" href="https://wa.me/213550056941" target="_blank" rel="noopener" aria-label="WhatsApp">◉</a><div class="toast" id="toast" role="status"></div>
+<script>
+let lang="ar";
+const langBtn=document.getElementById("langBtn");
+function setLang(next){lang=next;document.documentElement.lang=lang;document.documentElement.dir=lang==="ar"?"rtl":"ltr";document.querySelectorAll("[data-ar][data-fr]").forEach(el=>{el.innerHTML=el.dataset[lang]});langBtn.textContent=lang==="ar"?"FR":"عربي";document.querySelectorAll(".field input,.field textarea").forEach(el=>el.dir=lang==="ar"?"rtl":"ltr");}
+langBtn.addEventListener("click",()=>setLang(lang==="ar"?"fr":"ar"));
+document.getElementById("menuBtn").addEventListener("click",()=>document.getElementById("navLinks").classList.toggle("open"));
+document.querySelectorAll("#navLinks a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+document.getElementById("bookingForm").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.currentTarget);const labels={name:"الاسم",phone:"الهاتف",email:"البريد",service:"الخدمة",destination:"الوجهة",people:"عدد الأشخاص",date:"تاريخ السفر",message:"رسالة"};let msg="طلب جديد من موقع INSSAT TRAVEL SERVICE%0A";for(const [k,v] of f.entries()){if(v)msg+=encodeURIComponent(labels[k]+": "+v)+"%0A"}window.open("https://wa.me/213550056941?text="+msg,"_blank","noopener");const t=document.getElementById("toast");t.textContent=lang==="ar"?"سيتم فتح واتساب لإرسال طلبك إلى الوكالة.":"WhatsApp va s’ouvrir pour envoyer votre demande.";t.style.display="block";setTimeout(()=>t.style.display="none",4500);});
+
+// Shared offers manager powered by Google Apps Script.
+const API_URL = 'https://script.google.com/macros/s/AKfycbxE4SmKDvc8zaQdco-gFMugAZp_TYa5vnlLLdJaUKgk-c-CTWiR5A48Xpen6pJDautS/exec';
+const offersGrid=document.getElementById('offersGrid');
+const loginModal=document.getElementById('adminLoginModal');
+const editorModal=document.getElementById('adminEditorModal');
+let adminUnlocked=false;
+let adminPassword='';
+let offers=[];
+const arEmpty='لا توجد عروض منشورة حالياً. ترقبوا عروضنا القادمة.';
+const frEmpty='Aucune offre publiée pour le moment. Nos prochaines offres arrivent bientôt.';
+function esc(v){return String(v||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function apiPost(data){
+ let response;
+ try {
+  response=await fetch(API_URL,{method:'POST',mode:'cors',redirect:'follow',credentials:'omit',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data),cache:'no-store'});
+ } catch(networkError) {
+  throw new Error('فشل الاتصال بخادم Google: '+(networkError.message||'NetworkError'));
+ }
+ const raw=await response.text();
+ let result;
+ try { result=JSON.parse(raw); }
+ catch(parseError) { throw new Error('وصل رد غير مفهوم من Google (HTTP '+response.status+'): '+raw.slice(0,180)); }
+ if(!response.ok)throw new Error('خطأ HTTP '+response.status+': '+(result.error||raw.slice(0,180)));
+ if(!result.success)throw new Error(result.error||'رفض الخادم العملية');
+ return result;
+}
+async function loadOffers(){
+ offersGrid.innerHTML='<div class="offers-empty">'+(lang==='ar'?'جارٍ تحميل العروض...':'Chargement des offres...')+'</div>';
+ try{const r=await fetch(API_URL,{cache:'no-store'});const data=await r.json();if(!data.success)throw new Error('API');offers=(data.offers||[]).map(o=>({...o,category:o.category||'عرض سياحي'}));renderOffers();}
+ catch(e){offersGrid.innerHTML='<div class="offers-empty">'+(lang==='ar'?'تعذر تحميل العروض حالياً. يرجى المحاولة لاحقاً.':'Impossible de charger les offres pour le moment.')+'</div>';}
+}
+function renderOffers(){
+ if(!offers.length){offersGrid.innerHTML='<div class="offers-empty">'+(lang==='ar'?arEmpty:frEmpty)+'</div>';return}
+ offersGrid.innerHTML=offers.map(o=>`<article class="offer-card">${o.image?`<img src="${esc(o.image)}" alt="${esc(o.title)}" loading="lazy">`:''}<div class="offer-card-body"><small class="offer-meta">${esc(o.category)}${o.date?' · '+esc(o.date):''}</small><h3>${esc(o.title)}</h3>${o.price?`<div class="offer-price">${esc(o.price)}</div>`:''}<p>${esc(o.details)}</p><a class="btn btn-gold" href="https://wa.me/213550056941?text=${encodeURIComponent('أريد الاستفسار عن العرض: '+o.title)}" target="_blank" rel="noopener">${lang==='ar'?'احجز / استفسر':'Réserver / Demander'}</a>${adminUnlocked?`<div class="offer-manage"><button class="admin-edit" onclick="editOffer('${esc(o.id)}')">تعديل</button><button class="admin-delete" onclick="deleteOffer('${esc(o.id)}')">حذف</button></div>`:''}</div></article>`).join('');
+}
+document.getElementById('adminOpen').addEventListener('click',()=>{if(adminUnlocked){editorModal.style.display='block'}else{loginModal.style.display='block';document.getElementById('adminPassword').focus()}});
+document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>document.getElementById(b.dataset.close).style.display='none'));
+document.getElementById('adminLoginForm').addEventListener('submit',async e=>{e.preventDefault();const val=document.getElementById('adminPassword').value;const err=document.getElementById('adminLoginError');err.textContent='';try{await apiPost({action:'auth',password:val});adminPassword=val;adminUnlocked=true;loginModal.style.display='none';editorModal.style.display='block';document.getElementById('adminPassword').value='';await loadOffers();renderOffers();}catch(ex){console.error('INSSAT admin login:',ex);err.textContent=ex.message||'حدث خطأ غير معروف أثناء تسجيل الدخول.';}});
+document.getElementById('adminLogout').addEventListener('click',()=>{adminUnlocked=false;adminPassword='';editorModal.style.display='none';renderOffers()});
+async function uploadOfferImage(file){
+ if(!file) return '';
+ if(!file.type || !file.type.startsWith('image/')) throw new Error('الملف المختار ليس صورة.');
+ if(file.size > 8*1024*1024) throw new Error('حجم الصورة أكبر من 8 ميغابايت. اختر صورة أصغر.');
+ const status=document.getElementById('offerImageStatus');
+ status.textContent='جارٍ تجهيز الصورة ورفعها إلى Google Drive...';
+ const dataUrl=await new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(reader.result);reader.onerror=()=>reject(new Error('تعذرت قراءة الصورة من الجهاز.'));reader.readAsDataURL(file);});
+ const base64=String(dataUrl).split(',')[1];
+ const result=await apiPost({action:'uploadImage',password:adminPassword,fileName:file.name,mimeType:file.type,base64:base64});
+ status.textContent='تم رفع الصورة بنجاح.';
+ return result.url;
+}
+document.getElementById('offerImageFile').addEventListener('change',()=>{const f=document.getElementById('offerImageFile').files[0];document.getElementById('offerImageStatus').textContent=f?'الصورة المختارة: '+f.name:'';});
+document.getElementById('offerForm').addEventListener('submit',async e=>{
+ e.preventDefault();
+
+ const form = e.currentTarget;
+
+ if(!adminUnlocked)return;
+
+ const id=document.getElementById('offerId').value;
+ const previous=offers.find(x=>String(x.id)===String(id));
+ const submit=e.submitter;
+
+ if(submit){
+  submit.disabled=true;
+  submit.textContent='جارٍ الحفظ...';
+ }
+
+ try{
+  const selectedFile=document.getElementById('offerImageFile').files[0];
+
+  const uploadedImage=selectedFile
+   ? await uploadOfferImage(selectedFile)
+   : '';
+
+  const item={
+   id,
+   title:document.getElementById('offerTitle').value.trim(),
+   price:document.getElementById('offerPrice').value.trim(),
+   date:document.getElementById('offerDate').value.trim(),
+   category:document.getElementById('offerCategory').value,
+   details:document.getElementById('offerDetails').value.trim(),
+   image:uploadedImage ||
+    document.getElementById('offerImage').value.trim() ||
+    (previous?.image||''),
+   status:'منشور'
+  };
+
+  await apiPost({
+   action:id?'update':'add',
+   password:adminPassword,
+   ...item
+  });
+
+  await loadOffers();
+
+  renderOffers();
+
+  document.getElementById('offerId').value='';
+document.getElementById('offerTitle').value='';
+document.getElementById('offerPrice').value='';
+document.getElementById('offerDate').value='';
+document.getElementById('offerCategory').selectedIndex=0;
+document.getElementById('offerDetails').value='';
+document.getElementById('offerImage').value='';
+document.getElementById('offerImageFile').value='';
+
+  document.getElementById('offerId').value='';
+  document.getElementById('offerImageStatus').textContent='';
+  document.getElementById('offerImageCurrent').textContent='';
+  document.getElementById('adminEditorTitle').textContent='إضافة عرض جديد';
+
+  alert('تم حفظ العرض بنجاح ونشره لجميع الزوار.');
+
+ }catch(ex){
+  console.error('INSSAT save offer:',ex);
+  alert('لم يتم حفظ العرض: '+ex.message);
+
+ }finally{
+  if(submit){
+   submit.disabled=false;
+   submit.textContent='حفظ ونشر العرض';
+  }
+ }
+}); // إغلاق حدث حفظ العرض
+
+window.editOffer=id=>{if(!adminUnlocked)return;const o=offers.find(x=>String(x.id)===String(id));if(!o)return;document.getElementById('offerId').value=o.id;document.getElementById('offerTitle').value=o.title||'';document.getElementById('offerPrice').value=o.price||'';document.getElementById('offerDate').value=o.date||'';document.getElementById('offerCategory').value=o.category||'عمرة';document.getElementById('offerDetails').value=o.details||'';document.getElementById('offerImage').value=o.image||'';document.getElementById('offerImageFile').value='';document.getElementById('offerImageStatus').textContent='';document.getElementById('offerImageCurrent').textContent=o.image?'الصورة الحالية محفوظة ومتاحة للزوار.':'';document.getElementById('adminEditorTitle').textContent='تعديل العرض';editorModal.style.display='block'};
+window.deleteOffer=async id=>{if(!adminUnlocked||!confirm('هل تريد حذف هذا العرض؟'))return;try{await apiPost({action:'delete',password:adminPassword,id});await loadOffers();renderOffers();}catch(ex){alert('تعذر حذف العرض: '+ex.message)}};
+
+renderOffers();
+</script>
+</body></html>
