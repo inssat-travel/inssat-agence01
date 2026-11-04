@@ -241,6 +241,6 @@ document.getElementById('offerImageFile').value='';
 window.editOffer=id=>{if(!adminUnlocked)return;const o=offers.find(x=>String(x.id)===String(id));if(!o)return;document.getElementById('offerId').value=o.id;document.getElementById('offerTitle').value=o.title||'';document.getElementById('offerPrice').value=o.price||'';document.getElementById('offerDate').value=o.date||'';document.getElementById('offerCategory').value=o.category||'عمرة';document.getElementById('offerDetails').value=o.details||'';document.getElementById('offerImage').value=o.image||'';document.getElementById('offerImageFile').value='';document.getElementById('offerImageStatus').textContent='';document.getElementById('offerImageCurrent').textContent=o.image?'الصورة الحالية محفوظة ومتاحة للزوار.':'';document.getElementById('adminEditorTitle').textContent='تعديل العرض';editorModal.style.display='block'};
 window.deleteOffer=async id=>{if(!adminUnlocked||!confirm('هل تريد حذف هذا العرض؟'))return;try{await apiPost({action:'delete',password:adminPassword,id});await loadOffers();renderOffers();}catch(ex){alert('تعذر حذف العرض: '+ex.message)}};
 
-renderOffers();
+loadOffers();
 </script>
 </body></html>
